@@ -1,0 +1,132 @@
+/* Footer principale */
+.contact-section {
+  width: 100%;
+  background-color: #64928e; /* sfondo scuro */
+  color: #fff;
+  padding: 60px 20px 150px 20px; /* spazio sotto per evitare sovrapposizione se sticky */
+  margin-top: 100px;
+  position: sticky; /* resta visibile fino al fondo */
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+}
+
+/* Titolo del footer */
+.contact-section h3 {
+  font-size: 60px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 0 40px 0;
+  color: var(--accentColor); /* colore accento del tuo sito */
+}
+
+/* Container dei box */
+.contact-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Titoli all'interno dei box */
+.contact-flex h4 {
+  font-weight: 500;
+  margin: 0;
+  opacity: 0.6;
+}
+
+/* Box individuali */
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+}
+
+/* Paragrafi e link */
+.contact-flex p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+a.contact-social {
+  font-size: 25px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s;
+}
+
+a.contact-social:hover {
+  color: var(--accentColor);
+  border-bottom-color: var(--accentColor);
+}
+
+/* Titoli secondari e copyright */
+.contact-box h2 {
+  font-weight: 400;
+  font-size: 23px;
+  margin: 0 0 10px 0;
+}
+
+.contact-box h2 > span {
+  color: var(--accentColor);
+}
+
+.contact-box h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  display: flex;
+  gap: 10px;
+  opacity: 0.5;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1600px) {
+  .contact-section h3 {
+    font-size: 50px;
+  }
+  .contact-box h2 {
+    font-size: 20px;
+  }
+  a.contact-social {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .contact-section h3 {
+    font-size: 40px;
+  }
+  .contact-box h2 {
+    font-size: 18px;
+  }
+  a.contact-social {
+    font-size: 20px;
+  }
+  .contact-flex p {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .contact-flex {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .contact-flex p {
+    margin-bottom: 0px;
+  }
+  .contact-flex h4 {
+    margin-top: 20px;
+  }
+  .contact-section {
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+  .contact-container {
+    width: calc(100% - 25px);
+  }
+}

@@ -1,0 +1,81 @@
+/* Sezione About */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  place-items: center;
+  position: relative;
+  opacity: 1;
+  height: auto;
+  width: var(--cWidth);
+  margin: auto;
+}
+
+.about-me {
+  padding: 50px 0;
+  width: 500px;
+  max-width: calc(100% - 15px);
+}
+
+/* Titolo "Chi siamo" */
+.about-me h3 {
+  font-size: 32px; /* più grande e leggibile */
+  text-transform: uppercase;
+  letter-spacing: 3px; /* meno distanziamento */
+  font-weight: 600; /* più equilibrato, non troppo leggero */
+  color: #5bc8bf; /* viola sostituito dal tuo colore principale */
+  margin-bottom: 20px; /* spazio sotto il titolo */
+}
+
+/* Paragrafo descrizione */
+.about-me p {
+  font-size: 18px; /* più piccolo e leggibile */
+  font-weight: 400; /* meno grassetto */
+  line-height: 1.8; /* più arioso e leggibile */
+  letter-spacing: 0.5px;
+  color: #eae5ec; /* colore chiaro, leggibile sullo sfondo scuro */
+  margin: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .about-section {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about-me {
+    width: 500px;
+    max-width: calc(100% - 70px);
+    transform: translateY(0%);
+  }
+  .about-section {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .about-section {
+    width: var(--cWidth);
+    justify-content: right;
+    max-width: 1920px;
+    height: var(--vh);
+    padding: 0px;
+    opacity: 1;
+  }
+  .about-me {
+    padding: 0px;
+    width: 50%;
+  }
+  .about-me p {
+    font-size: 1.2vw; /* più equilibrato su desktop */
+    line-height: 1.8vw;
+  }
+}
+
+@media only screen and (min-width: 1950px) {
+  .about-me p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+}
