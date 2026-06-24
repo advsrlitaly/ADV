@@ -104,7 +104,7 @@ const Work = () => {
     <div className="work-section" id="work" ref={sectionRef}>
       <div className="work-container section-container">
         <h2>
-          My <span>Work</span>
+          Our <span>Clients</span>
         </h2>
 
         <div className="work-flex" ref={flexRef}>
