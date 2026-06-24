@@ -35,7 +35,7 @@ const clients = [
     name: "Fugu",
     service: "Social",
     tools: "Instagram, Facebook",
-    logo: "/images/logo-fugu-bianca.png",
+    logo: "/images/logo-fugu-bianco-oriz.png",
   },
   {
     name: "Hanami",
@@ -49,13 +49,7 @@ const clients = [
     tools: "Wordpress, Instagram, Facebook",
     logo: "/images/logo-bianca.png",
   },
-  {
-    name: "Fabrica",
-    service: "Social",
-    tools: "Instagram & Facebook",
-    logo: "/images/logo-fabrica.png",
-  },
-  {
+ {
     name: "Okay",
     service: "Siti Web & Social",
     tools: "Wordpress , Instagram, Facebook",
