@@ -114,6 +114,7 @@ const Work = () => {
                 <div className="work-title">
                   <h3>{String(index + 1).padStart(2, "0")}</h3>
                   <div>
+                  
                     <h4>{client.name}</h4>
                     <p>{client.service}</p>
                   </div>
